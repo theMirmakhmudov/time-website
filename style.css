@@ -79,7 +79,7 @@ body.white {
 .btn1 {
     position: absolute;
     top: 5%;
-    left: 93%;
+    left: 90%;
     transform: translate(-50%, -50%);
     padding: 15px;
     font-size: 20px;
@@ -91,7 +91,7 @@ body.white {
 .btn2 {
     position: absolute;
     top: 5%;
-    left: 80%;
+    left: 78%;
     transform: translate(-50%, -50%);
     padding:16px 21px;
     font-size:20px;
@@ -103,7 +103,7 @@ body.white {
 .btn3 {
     position: absolute;
     top: 5%;
-    left: 8%;
+    left: 10%;
     transform: translate(-50%, -50%);
     padding: 15px;
     font-size: 25px;
