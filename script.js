@@ -58,13 +58,19 @@ function allert(hour, minute) {
     let minutes = now.getMinutes();
     let seconds = now.getSeconds();
     person_hour = Math.floor(person / 60) + hours
-    person_minute = person % 60 + minutes
+    if (person % 60 + minutes != 60) {
+        person_minute = person % 60 + minutes
+    }
+    else{
+        person_minute=person_minute - 60
+        person_hour= person_hour + 1
+    }
     person_second = seconds
     let formattedTime = formatTime(person_hour, person_minute, person_second);
     if (person != null) {
 
         document.getElementById("demo2").innerHTML =
-            "Oraliq vaqt " + person + " minut !<br>" + "Tugash vaqti :" + formattedTime;
+            "Oraliq vaqt " + Math.floor(person/60) + " soat " + person%60 + " minut<br>" + "Tugash vaqti :" + formattedTime;
     }
 }
 
