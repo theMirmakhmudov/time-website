@@ -69,22 +69,13 @@ function allert() {
     }
     person_second = seconds;
     let formattedTime = formatTime(person_hour, person_minute, person_second);
-    if (person !== null && person !== NaN) {
+    if (person !== null) {
 
         document.getElementById("demo2").innerHTML =
             "Oraliq vaqt " + Math.floor(person/60) + " soat " + person%60 + " minut<br>" + "Tugash vaqti :" + formattedTime;
-    }
-    else if (person == null){
-        alert("Error value try again");
-    }
-}
-
-    
-
-function time_up() {
-    if (person_hour == hours && person_minute == minutes && person_second == seconds) {
-        document.getElementById("demo2").style.display = "none";
-        document.getElementById("demo3").style.display = "inline-block";
+            setTimeout(function() {
+                document.getElementById("demo2").innerHTML = "Vaqtingiz tugadi!";
+            }, person*60000);
     }
 }
 function error_value() {
@@ -127,4 +118,4 @@ function toggleTimer() {
 
 
 showTimer()
-time_up()
+// time_up()
