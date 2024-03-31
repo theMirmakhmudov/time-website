@@ -20,7 +20,16 @@ body.white {
     font-weight: 700;
     font-family: "Ubuntu", sans-serif;
 }
-
+#demo3 {
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 25px;
+    font-weight: 700;
+    font-family: "Ubuntu", sans-serif;
+    display: none;
+}
 .btn1 {
     position: absolute;
     top: 5%;
@@ -90,6 +99,7 @@ body.white {
     border: 1px solid black;
     border-radius: 20%;
     background-color: white;
+    display: inline-block;
 }
 
 .btn2 {
@@ -125,4 +135,5 @@ body.white {
     font-weight: 700;
     font-family: "Ubuntu", sans-serif;
 }
+
 }
