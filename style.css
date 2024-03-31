@@ -121,5 +121,8 @@ body.white {
     top: 80%;
     left: 50%;
     transform: translate(-50%, -50%);
+    font-size: 25px;
+    font-weight: 700;
+    font-family: "Ubuntu", sans-serif;
 }
 }
